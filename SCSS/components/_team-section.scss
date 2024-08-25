@@ -1,0 +1,67 @@
+.team-section{
+  padding-bottom: 94px;
+  padding-top: 94px;
+  background-color: #F5F4FA;
+}
+.first-person,
+.second-person,
+.third-person,
+.fourth-person {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 0 0 4px 4px;
+  display: flex;
+}
+.section-list{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-basis: calc((100% - 90px) / 4);
+}
+.section-list-item {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.team-section-title {
+  margin-top: 30px;
+  text-align: center;
+}
+.team-section-paragraph {
+  margin-top: 10px;
+  text-align: center;
+}
+.footer-adress{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+}
+.icons-list {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.icons-list .icons-list-element:nth-child(n+1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #AFB1B8;
+  width: 44px;
+  height: 44px;
+  border-radius: 90px;
+  background-color: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.icons-list .icons-list-element:hover {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+  fill: #fff;
+  background-color: #2196f3;
+}
