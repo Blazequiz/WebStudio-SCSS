@@ -1,0 +1,50 @@
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.last-section-title {
+  margin-bottom: 50px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+}
+.clients-list { 
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.clients-item-first,
+.clients-item-second,
+.clients-item-third,
+.clients-item-fourth,
+.clients-item-fivth,
+.clients-item-last
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #AFB1B8;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-item-first:hover,
+.clients-item-second:hover,
+.clients-item-third:hover,
+.clients-item-fourth:hover,
+.clients-item-fivth:hover,
+.clients-item-last:hover
+{
+  fill: #2196F3;
+  border: 1px solid #2196F3;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+/* last section elements svg`s*/
+.transform-style-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
