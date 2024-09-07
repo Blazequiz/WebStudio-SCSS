@@ -2,25 +2,25 @@ footer{
   padding-top: 60px;
   padding-bottom: 60px;
 
-  background-color: var(--background-color);
+  background-color: $background-color;
 }
 .header-second-link{
   display: inline-block;
   padding-bottom: 20px;
-  font-family: var(--second-family);
+  font-family: $second-family;
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
   color: #fff;
   text-decoration: none;
-  font-family: var(--second-family);
+  font-family: $second-family;
 }
 footer a{ 
   font-weight: 400;
   font-size: 14px;
   line-height: 1,71;
   letter-spacing: 0.03em;
-  color: var(--main-adress-color)
+  color: $main-adress-color;
 }
 .footer-wrapper {
   align-items: baseline;
@@ -34,7 +34,7 @@ footer a{
   align-items: flex-start;
 }
 .footer-h2 {
-  font-family: var(--font-family);
+  font-family: $font-family;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -44,7 +44,7 @@ footer a{
 /* footer form */
 .footer-form-h2 {
   margin-bottom: 20px;
-  font-family: var(--font-family);
+  font-family: $font-family;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -73,7 +73,7 @@ footer a{
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #2196f3;
-  font-family: var(--font-family);
+  font-family: $font-family;
   font-weight: 700;
   font-size: 16px;
   line-height: 187%;

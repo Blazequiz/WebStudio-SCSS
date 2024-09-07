@@ -17,7 +17,7 @@
 }
 .title {
   margin-bottom: 30px;
-  color: var(--main-current-color);
+  color: $main-current-color;
   font-weight: 900;
   font-size: 44px;
   line-height: 1,36;
@@ -50,7 +50,7 @@
 .main-list-title{
   margin-top: 30px;
   margin-bottom: 10px;
-  font-family: var(--font-family);
+  font-family: $font-family;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -58,7 +58,7 @@
 }
 .main-list-paragraph {
   width: 270px;
-  font-family: var(--font-family);
+  font-family: $font-family;
   font-weight: 400;
   font-size: 14px;
   line-height: 1, 71;
@@ -71,7 +71,7 @@ h3 {
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--main-heading-color);
+  color: $main-heading-color;
 }
 .first-main-list-item,
 .second-main-list-item,
@@ -81,7 +81,7 @@ h3 {
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
-  color: var(--text-color);
+  color: $text-color;
 /* before elemets are started*/
 }
 .first-main-list-item::before {
