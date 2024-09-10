@@ -1,0 +1,19 @@
+.icon-list {
+  gap: 10px;
+  margin-top: 16px;
+  display: flex;
+  &-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;
+    width: 44px;
+    height: 44px;
+    border-radius: 90px;
+    background-color: rgba(255, 255, 255, 0.1);
+    &:hover {
+      fill: #fff;
+      background-color: #2196f3;
+    }
+  }
+}

@@ -12,24 +12,6 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &-item {
-    position: relative;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &::after {
-      content: '';
-      position: absolute;
-      top: 46px;
-      transform: scale(0);
-      height: 4px;
-      display: block;
-      background: #2196f3;
-      border-radius: 2px;
-      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &:hover::after {
-      transform: scale(1);
-    }
-  }
 
   &-logotip {
     margin-right: 93px;
@@ -45,66 +27,6 @@
     }
   }
 
-  &-link {
-    font-family: $font-family;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-    color: #212121;
-    text-decoration: none;
-    position: relative;  // Это важно для корректного позиционирования ::after
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: -4px; // Указали явное расположение относительно текста ссылки
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background: #2196f3;
-      border-radius: 2px;
-      transform: scale(0);
-      transform-origin: bottom left;
-      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      top: 46px;
-      left: 0;
-      bottom: 0;
-    }
-
-    &:hover::after {
-      transform: scale(1);
-      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &:hover {
-      color: #2196f3;
-      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-  }
-
-  &-contact {
-    margin-left: auto;
-    align-items: center;
-    gap: 50px;
-    display: flex;
-
-    &-contacts {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
-      &:hover svg, &:hover a {
-        fill: #2196f3;
-        color: #2196f3;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-    }
-  }
 
   &-phone,
   &-email {
@@ -116,22 +38,84 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   }
 }
-.header-contacts-items:hover {
-  fill: #2196f3;
-  color: #2196f3;
-}
-.header-list-item a::after {
-  content: '';
-  position: absolute;
-  top: 46px;
-  transform: scale(0);
-  height: 4px;
-  display: block;
-  background: #2196f3;
-  border-radius: 2px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.header-item {
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &::after {
+    content: '';
+    position: absolute;
+    top: 46px;
+    transform: scale(0);
+    height: 4px;
+    display: block;
+    background: #2196f3;
+    border-radius: 2px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover::after {
+    transform: scale(1);
+  }
 }
 
-.header-list-item a:hover::after {
-  transform: scale(1);
+.header-contact {
+  margin-left: auto;
+  align-items: center;
+  gap: 50px;
+  display: flex;
+
+  &-contacts {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover svg, &:hover a {
+      fill: #2196f3;
+      color: #2196f3;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
 }
+
+.header-link {
+  font-family: $font-family;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+  position: relative;  
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; 
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #2196f3;
+    border-radius: 2px;
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    top: 46px;
+    left: 0;
+    bottom: 0;
+  }
+
+  &:hover::after {
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover {
+    color: #2196f3;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
