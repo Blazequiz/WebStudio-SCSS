@@ -1,10 +1,9 @@
 .clients-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @extend %paddings;
   &-list { 
+    @extend %gaps;
     display: flex;
     justify-content: center;
-    gap: 30px;
 
     &-item-first,
     &-item-second,

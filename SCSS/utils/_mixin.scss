@@ -1,0 +1,7 @@
+// @mixin gaps ($gap) {
+//   gap:$gap;
+// }
+@mixin paddings ($padding-bottom , $padding-top) {
+  padding-bottom: $padding-bottom;
+  padding-top:  $padding-top;
+}

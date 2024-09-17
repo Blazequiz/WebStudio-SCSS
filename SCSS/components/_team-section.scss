@@ -1,11 +1,9 @@
 .team-section{
-  padding-bottom: 94px;
-  padding-top: 94px;
+  @extend %paddings;
   background-color: #F5F4FA;
   &-list{
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    @extend %gaps;
     flex-basis: calc((100% - 90px) / 4);
     &-item {
       font-weight: 400;
@@ -27,14 +25,28 @@
     }
   }
   &-title {
-    margin-top: 30px;
-    text-align: center;
+    @extend %sections-titles;
+    font-family: $font-family;
   }
 }
-
 .team-section-paragraph {
   margin-top: 10px;
   text-align: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #757575;
+}
+.team-section-title-h4 {
+  margin-top: 30px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
 }
 .footer-adress{
   font-weight: 400;

@@ -1,7 +1,8 @@
 .our-classes {
+  @extend %paddings;
   &-list {
+    @extend %gaps;
     display: flex;
-    justify-content:space-between;
     &-item {
       position: relative;
         &-title {
@@ -22,5 +23,5 @@
   }
 }
 .work-title{
-  padding-bottom: 50px;
+  @extend %sections-titles;
 }

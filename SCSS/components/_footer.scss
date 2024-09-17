@@ -1,6 +1,5 @@
 footer{
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @include paddings(60px , 60px);
   background-color: $background-color;
 
   &-second-link {  

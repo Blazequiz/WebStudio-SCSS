@@ -21,6 +21,25 @@ input:focus, button:focus, textarea:focus, select:focus {
   outline: none;
 }
 
+.team-section-title, .work-title {
+  margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.clients-section, .team-section, .features, .our-classes {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+.clients-section-list, .team-section-list, .features-list, .our-classes-list {
+  gap: 30px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -72,7 +91,6 @@ footer a {
 
 .our-classes-list {
   display: flex;
-  justify-content: space-between;
 }
 .our-classes-list-item {
   position: relative;
@@ -90,10 +108,6 @@ footer a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin: 0;
-}
-
-.work-title {
-  padding-bottom: 50px;
 }
 
 .header {
@@ -205,8 +219,8 @@ footer a {
 }
 
 .section-title {
-  padding-top: 200px;
   padding-bottom: 200px;
+  padding-top: 200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -241,12 +255,8 @@ footer a {
   text-align: center;
 }
 
-.features {
-  padding-top: 94px;
-}
 .features-list {
   display: flex;
-  gap: 30px;
   justify-content: center;
 }
 .features-list-first-item {
@@ -346,14 +356,10 @@ h3 {
 }
 
 .team-section {
-  padding-bottom: 94px;
-  padding-top: 94px;
   background-color: #F5F4FA;
 }
 .team-section-list {
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
   flex-basis: calc((100% - 90px) / 4);
 }
 .team-section-list-item {
@@ -372,13 +378,28 @@ h3 {
   display: flex;
 }
 .team-section-title {
-  margin-top: 30px;
-  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .team-section-paragraph {
   margin-top: 10px;
   text-align: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #757575;
+}
+
+.team-section-title-h4 {
+  margin-top: 30px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
 }
 
 .footer-adress {
@@ -413,14 +434,9 @@ h3 {
   background-color: #2196f3;
 }
 
-.clients-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .clients-section-list {
   display: flex;
   justify-content: center;
-  gap: 30px;
 }
 .clients-section-list-item-first, .clients-section-list-item-second, .clients-section-list-item-third, .clients-section-list-item-fourth, .clients-section-list-item-fivth, .clients-section-list-item-last {
   display: flex;
@@ -473,8 +489,8 @@ h3 {
 }
 
 footer {
-  padding-top: 60px;
   padding-bottom: 60px;
+  padding-top: 60px;
   background-color: #2f303a;
 }
 footer-second-link {

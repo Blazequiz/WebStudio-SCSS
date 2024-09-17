@@ -1,8 +1,8 @@
 .features{
-  padding-top: 94px;
+  @extend %paddings;
   &-list {
+    @extend %gaps;
     display: flex;
-    gap: 30px;
     justify-content: center;
     &-first-item  {
       font-weight: 400;
