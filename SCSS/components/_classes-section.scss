@@ -1,11 +1,23 @@
 .our-classes {
+  @media (max-width: 767px) {
+    display: none;
+  }
   @extend %paddings;
   &-list {
+    @media (max-width: 767px) {
+      display: none;
+    }
     @extend %gaps;
     display: flex;
     &-item {
+      @media (max-width: 767px) {
+        display: none;
+      }
       position: relative;
         &-title {
+          @media (max-width: 767px) {
+            display: none;
+          }
           bottom: 0;
           width: 100%;
           padding: 27px 0;
@@ -23,5 +35,8 @@
   }
 }
 .work-title{
+  @media (max-width: 767px) {
+    display: none;
+  }
   @extend %sections-titles;
 }
