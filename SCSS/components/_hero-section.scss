@@ -13,11 +13,6 @@
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: center;
-  @mixin (max-width: 767px) 
-    {
-    width: 100%;   
-   }  
-  
   &-button {
       padding: 10px 32px;
       border: 0;
