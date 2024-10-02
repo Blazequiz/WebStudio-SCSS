@@ -1,15 +1,14 @@
 .section-title {
-  @include paddings(200px , 200px);
+  @include paddings(118px , 118px);
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 100%; 
   background-image: 
     linear-gradient(
       rgba(47, 48, 58, 0.4) 0%, 
       rgba(130, 132, 160, 0.4) 100%
     ), 
-    url(../img/background.jpg);
+    url(../img/hero-background-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: center;
@@ -29,14 +28,15 @@
   }
 
   &-title {
-      margin-bottom: 30px;
-      color: $main-current-color;
-      font-weight: 900;
-      font-size: 44px;
-      line-height: 1,36;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      text-align: center;
+    margin-bottom: 30px;
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 162%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
   }
 }
 

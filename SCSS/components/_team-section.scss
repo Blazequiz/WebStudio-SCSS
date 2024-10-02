@@ -2,10 +2,11 @@
   @extend %paddings;
   background-color: #F5F4FA;
   &-list{
-    display: flex;
+    display: block;
     @extend %gaps;
     flex-basis: calc((100% - 90px) / 4);
     &-item {
+      width: 450px;
       font-weight: 400;
       font-size: 16px;
       letter-spacing: 0.03em;
@@ -77,4 +78,7 @@
       background-color: #2196f3;
     }
   }
+}
+.team-section-images {
+  width: 450px;
 }

@@ -1,7 +1,8 @@
 .buttons-list {
   margin-bottom: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 8px;
   &-items {
     padding: 6px 22px;
@@ -31,7 +32,7 @@
   flex-wrap: wrap;  
   gap: 30px;
   &-items{
-    display: flex;
+    width: 100%;
     &-paragraph {
       margin-left: 24px;
       font-family: $font-family;
@@ -51,7 +52,7 @@
     flex-basis: calc(100% - 180px) / 6;
   }
   &-element {
-    width: 370px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     &:hover {

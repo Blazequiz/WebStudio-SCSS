@@ -4,6 +4,8 @@
     @extend %gaps;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 
     &-item-first,
     &-item-second,
