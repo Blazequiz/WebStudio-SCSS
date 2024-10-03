@@ -1,5 +1,9 @@
 .buttons-list {
-  margin-bottom: 50px;
+  @media screen  and (min-width:768px) {
+    justify-content: center;   
+    margin-bottom: 30px;
+  }
+  margin-bottom: 46px;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -52,6 +56,9 @@
     flex-basis: calc(100% - 180px) / 6;
   }
   &-element {
+    @media screen and (min-width:768px) {
+      width: 354px;
+    }
     width: 100vw;
     display: flex;
     flex-direction: column;

@@ -86,7 +86,13 @@ footer a {
   padding: 0 15px;
   margin: 0 auto;
   width: 450px;
+  min-width: 320px;
   outline: 2px dashed darkcyan;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -377,6 +383,11 @@ footer a {
   letter-spacing: 0.03em;
   color: #757575;
 }
+@media screen and (min-width: 768px) {
+  .features-list-fourth-item {
+    width: 354px;
+  }
+}
 .features-list-fourth-item::before {
   content: "";
   display: block;
@@ -386,11 +397,6 @@ footer a {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px;
-}
-@media screen and (min-width: 768px) {
-  .features-list {
-    width: 354px;
-  }
 }
 
 .features-title {
@@ -446,11 +452,7 @@ h3 {
   }
 }
 .team-section-list-item {
-  width: 450px;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  color: #757575;
+  width: 354px;
 }
 .team-section-list-item-first-person, .team-section-list-item-second-person, .team-section-list-item-third-person, .team-section-list-item-fourth-person {
   padding-bottom: 30px;
@@ -605,11 +607,26 @@ footer-second-link {
   justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px 106px;
+    align-items: baseline;
+  }
+}
 .footer-wrapper-second-part {
   margin-left: 70px;
   margin-right: 93px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .footer-wrapper-second-part {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 .footer-wrapper-style {
   display: flex;
@@ -656,6 +673,11 @@ footer-second-link {
   border-radius: 4px;
   width: 100%;
   height: 50px;
+}
+@media screen and (min-width: 768px) {
+  .footer-wrapper-subscribe-form {
+    width: 450px;
+  }
 }
 .footer-wrapper-subscribe-form-input {
   background-color: transparent;
@@ -720,11 +742,17 @@ footer-second-link {
 }
 
 .buttons-list {
-  margin-bottom: 50px;
+  margin-bottom: 46px;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .buttons-list {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 .buttons-list-items {
   padding: 6px 22px;
@@ -779,6 +807,11 @@ footer-second-link {
   width: 100vw;
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .image-list-element {
+    width: 354px;
+  }
 }
 .image-list-element:hover {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);

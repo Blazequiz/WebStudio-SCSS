@@ -24,7 +24,18 @@ footer{
 .footer-wrapper {
   // align-items: baseline;
   // display: flex;
+  @media screen and (min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px 106px;
+    align-items: baseline;
+  }
   &-second-part {
+    @media screen and (min-width:768px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
     margin-left: 70px;
     margin-right: 93px;
     display: flex;
@@ -68,6 +79,9 @@ footer{
     }
   }
   &-subscribe-form {
+    @media screen and (min-width:768px) {
+      width: 450px;
+    }
     margin-bottom: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -144,3 +158,11 @@ footer{
 .footer-adress {
   margin-bottom: 8px;
 }
+
+// @media screen and (min-width:768px) and (max-width:1199px) {
+//   .tablet-wrapper {
+//     display: flex;
+//     align-items: baseline;
+//     justify-content: center;
+//   }
+// }

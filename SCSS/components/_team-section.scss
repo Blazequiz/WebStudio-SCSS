@@ -10,13 +10,9 @@
       flex-wrap: wrap;
     }
     &-item {
-      width: 450px;
-      font-weight: 400;
-      font-size: 16px;
-      letter-spacing: 0.03em;
-      color: #757575;
+      width: 354px;
       &-first-person,
-      &-second-person,
+      &-second-person,  
       &-third-person,
       &-fourth-person {
         padding-bottom: 30px;
@@ -34,6 +30,7 @@
     font-family: $font-family;
   }
 }
+
 .team-section-paragraph {
   margin-top: 10px;
   text-align: center;

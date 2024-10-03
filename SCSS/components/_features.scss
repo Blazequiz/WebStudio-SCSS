@@ -70,6 +70,9 @@
       }      
     }  
     &-fourth-item {
+          @media screen and (min-width:768px) {
+      width: 354px;       
+    }    
       font-weight: 400;
       font-size: 14px;
       line-height: 171%;
@@ -86,9 +89,6 @@
         border-radius: 4px;
       }
     }
-    @media screen and (min-width:768px) {
-      width: 354px;       
-    }    
   }
 }
 
