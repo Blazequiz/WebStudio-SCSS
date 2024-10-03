@@ -31,6 +31,11 @@ footer{
     gap: 60px 106px;
     align-items: baseline;
   }
+  @media screen and (min-width:1200px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 60px;
+  }
   &-second-part {
     @media screen and (min-width:768px) {
       margin-left: 0;
@@ -43,9 +48,14 @@ footer{
     // align-items: flex-start;
   }
   &-style {
-    display: flex;
+    @media screen  and (min-width:768px) {
+      display: block;
+    }
+    @media screen  and (min-width:1200px) {
+      display: flex;
+    }
     flex-direction: column;
-    // align-items: flex-start;
+    align-items: flex-start;
     &-btn {
       margin: 0 auto;
       display: flex;
@@ -81,6 +91,11 @@ footer{
   &-subscribe-form {
     @media screen and (min-width:768px) {
       width: 450px;
+      margin-bottom: 0;
+    }
+    @media screen and (min-width:1200px) {
+      width: 358px;
+      margin-bottom: 0;
     }
     margin-bottom: 20px;
     padding-top: 15px;
@@ -110,9 +125,16 @@ footer{
 }
 /* footer form */
 
-// .footer-scndwrapper {
-//   display: flex;
-// }
+.footer-scndwrapper {
+  @media screen  and (min-width:768px) {
+    display: flex;
+  }
+  @media screen  and (min-width:1200px) {
+    display: flex;
+  }
+  display: block;
+  align-items: center;
+}
 
 /*  */  
 /* footer svg`s */
@@ -158,11 +180,3 @@ footer{
 .footer-adress {
   margin-bottom: 8px;
 }
-
-// @media screen and (min-width:768px) and (max-width:1199px) {
-//   .tablet-wrapper {
-//     display: flex;
-//     align-items: baseline;
-//     justify-content: center;
-//   }
-// }

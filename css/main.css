@@ -99,9 +99,19 @@ footer a {
     width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .our-classes {
   display: none;
+}
+@media screen and (min-width: 1200px) {
+  .our-classes {
+    display: flex;
+  }
 }
 .our-classes-list {
   display: flex;
@@ -193,6 +203,13 @@ footer a {
     flex-direction: column;
     gap: 10px;
     align-items: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-contact {
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
   }
 }
 .header-contact-contacts {
@@ -308,6 +325,11 @@ footer a {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-list {
+    flex-wrap: nowrap;
   }
 }
 .features-list-first-item {
@@ -443,6 +465,7 @@ h3 {
 }
 .team-section-list {
   display: block;
+  gap: 30px;
   flex-basis: calc((100% - 90px) / 4);
 }
 @media screen and (min-width: 768px) {
@@ -451,8 +474,20 @@ h3 {
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team-section-list {
+    flex-wrap: nowrap;
+  }
+}
 .team-section-list-item {
-  width: 354px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .team-section-list-item {
+    width: 354px;
+    margin-bottom: 0px;
+  }
 }
 .team-section-list-item-first-person, .team-section-list-item-second-person, .team-section-list-item-third-person, .team-section-list-item-fourth-person {
   padding-bottom: 30px;
@@ -563,7 +598,7 @@ h3 {
 .icon-list {
   margin-bottom: 60px;
   gap: 10px;
-  margin-top: 16px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
@@ -616,6 +651,13 @@ footer-second-link {
     align-items: baseline;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-wrapper {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 60px;
+  }
+}
 .footer-wrapper-second-part {
   margin-left: 70px;
   margin-right: 93px;
@@ -629,8 +671,18 @@ footer-second-link {
   }
 }
 .footer-wrapper-style {
-  display: flex;
   flex-direction: column;
+  align-items: flex-start;
+}
+@media screen and (min-width: 768px) {
+  .footer-wrapper-style {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-wrapper-style {
+    display: flex;
+  }
 }
 .footer-wrapper-style-btn {
   margin: 0 auto;
@@ -677,6 +729,13 @@ footer-second-link {
 @media screen and (min-width: 768px) {
   .footer-wrapper-subscribe-form {
     width: 450px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-wrapper-subscribe-form {
+    width: 358px;
+    margin-bottom: 0;
   }
 }
 .footer-wrapper-subscribe-form-input {
@@ -695,6 +754,21 @@ footer-second-link {
 }
 
 /* footer form */
+.footer-scndwrapper {
+  display: block;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-scndwrapper {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-scndwrapper {
+    display: flex;
+  }
+}
+
 /*  */
 /* footer svg`s */
 /* chekbox */
@@ -813,6 +887,11 @@ footer-second-link {
     width: 354px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .image-list-element {
+    width: 370px;
+  }
+}
 .image-list-element:hover {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
@@ -878,6 +957,11 @@ footer-second-link {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate(-50%, -50%) scale(1) rotate(360deg);
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 
 .backdrop.is-hidden {
   opacity: 0;
@@ -934,7 +1018,7 @@ footer-second-link {
 }
 
 .accepting-form {
-  font-family: var(--font-family);
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 0.03em;
@@ -943,6 +1027,16 @@ footer-second-link {
   justify-content: center;
   align-items: center;
   gap: 7px;
+}
+@media screen and (min-width: 1200px) {
+  .accepting-form {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
 }
 
 .accepting {

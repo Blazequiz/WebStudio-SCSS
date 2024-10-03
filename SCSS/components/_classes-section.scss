@@ -1,4 +1,7 @@
 .our-classes {
+  @media screen  and (min-width:1200px) {
+    display: flex;
+  }
   display: none;
   @extend %paddings;
   &-list {
