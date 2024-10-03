@@ -4,6 +4,11 @@
   border-bottom: 1px solid #ececec;
 
   &-list {
+    @media screen and (min-width:768px) {
+      margin-right: 88px;
+      display: flex;
+      gap: 51px;
+    }
     margin-right: 93px;
     display: none;
     align-items: center;
@@ -13,7 +18,7 @@
   }
   &-logotip {
     margin-right: 93px;
-    font-family: var(--second-family);
+    font-family: $second-family;
     font-weight: 700;
     font-size: 26px;
     letter-spacing: 0.03em;
@@ -57,7 +62,12 @@
   align-items: center;
   gap: 50px;
   display: none;
-
+    @media screen and (min-width:768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+}
   &-contacts {
     display: flex;
     gap: 10px;
@@ -113,4 +123,15 @@
   font-size: 24px;
   letter-spacing: 0.03em;
   color: #2196f3;
+}
+@media screen and (min-width:768px) {
+.header-btn {
+    display: none;
+  }   
+}
+@media screen and (min-width:768px) {
+  .header-nav {
+    align-items: center;
+    display: flex;
+  }
 }

@@ -3,7 +3,12 @@
   &-list {
     @extend %gaps;
     display: block;
-    justify-content: center;
+    @media screen and (min-width:768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;        
+    }
+    // justify-content: center;
     &-first-item {
       font-weight: 400;
       font-size: 14px;
@@ -19,6 +24,9 @@
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 4px;
+      }
+      @media screen and (min-width:768px) {
+        width: 354px;       
       }
     }  
     &-second-item {
@@ -37,6 +45,9 @@
         background-position: center;
         border-radius: 4px;        
       }
+      @media screen and (min-width:768px) {
+        width: 354px;       
+      }
     }  
     &-third-item {
       font-weight: 400;
@@ -54,6 +65,9 @@
         background-position: center;
         border-radius: 4px;
       }
+      @media screen and (min-width:768px) {
+        width: 354px;       
+      }      
     }  
     &-fourth-item {
       font-weight: 400;
@@ -71,6 +85,9 @@
         background-position: center;
         border-radius: 4px;
       }
+    }
+    @media screen and (min-width:768px) {
+      width: 354px;       
     }    
   }
 }
@@ -85,15 +102,21 @@
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  @media screen and (min-width:768px) {
+    text-align: left;     
+  }
 }
   &-paragraph {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
   width: 100%;
   font-family: $font-family;
   font-weight: 400;
   font-size: 14px;
   line-height: 1, 71;
   letter-spacing: 0.03em;
+  @media screen and (min-width:768px) {
+    margin-bottom: 0;    
+  }
   }
 }
 h3 {

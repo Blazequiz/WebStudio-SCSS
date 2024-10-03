@@ -12,6 +12,13 @@
   background-repeat: no-repeat;
   background-size: cover; 
   background-position: center;
+  @media screen and (min-width:768px) {
+    background-image:     linear-gradient(
+      rgba(47, 48, 58, 0.4) 0%, 
+      rgba(130, 132, 160, 0.4) 100%
+    ), 
+    url(../img/header-tablet-bg.jpg);    
+  }  
   &-button {
       padding: 10px 32px;
       border: 0;
