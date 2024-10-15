@@ -1,0 +1,39 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  transition: transform 500ms ease-in-out;
+  transform: translateX(100%);
+  @media screen and (min-width:768px) {
+    display: none;
+  }
+}
+.menu-container.is-open {
+  transform: translateX(0%);
+  transition: transform 500ms ease-in-out;
+}
+.MenuCloseBtn {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  @media screen and (min-width:768px) {
+    display: none;
+  }
+}
+.header-menu-btn {
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  @media screen and (min-width:768px) {
+    display: none;
+  }
+}

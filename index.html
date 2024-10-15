@@ -27,17 +27,24 @@
             ><span class="header-logotip-logo">Web</span>Studio</a
           >
           <ul class="header-list flex">
-            <li class="header-item">
-              <a href="./index.html" class="header-link">Студія</a>
+            <li class="header-item">  
+              <a href="./index.html" class="header-link current">Студія</a>
             </li>
             <li class="header-item">
               <a href="./portfolio.html" class="header-link">Портфоліо</a>
             </li>
             <li class="header-item">
-              <a href="#" class="header-link current">Контакти</a>
+              <a href="#" class="header-link">Контакти</a>
             </li>
           </ul>
-          <button class="header-btn">btn</button>
+          <button class="header-menu-btn js-open-menu" aria-controls="mobile-menu" aria-expanded="false">
+            <svg width="20" height="20" class="svg-item">
+              <use
+                href="./img/symbol-defs.svg#burger-menu-svg"
+                class="burger-open-svg"
+              ></use>
+            </svg>
+          </button>
         </nav>
         <ul class="header-contact">
           <li class="header-contact-contacts">
@@ -544,6 +551,39 @@
         </div>        
         <button type="submit" class="submit-btn">Відправити</button>
       </form>
+      <!-- burger menu -->
+      <div class="menu-container">
+        <button class="MenuCloseBtn">
+          <svg width="20" height="20" class="svg-item">
+            <use
+              href="./img/symbol-defs.svg#close-burger-btn-svg"
+              class="burger-close-svg"
+            ></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu js-menu-container" id="mobile-menu">
+          <li class="mobile-menu-element js-close-menu">
+            <a href="./index.html" class="mobile-link">Студія</a>
+          </li>
+          <li class="mobile-menu-element">
+            <a href="./portfolio.html" class="mobile-link">Портфоліо</a>
+          </li>
+          <li class="mobile-menu-element">
+            <a href="#" class="mobile-link">Контакти</a>
+          </li>
+        </ul>        
+        <!-- second list with contacts -->
+        <ul class="header-contact">
+          <li class="header-contact-contacts">
+            <a class="header-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <!--  -->
+          <li class="">
+            <a class="" href="">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     <script src="./JS/modal.js"></script>
+    <script src="./JS/burger-menu.js"></script>
   </body>
 </html>

@@ -44,6 +44,7 @@
     content: '';  
     position: absolute;
     top: 46px;
+    bottom: 0;
     transform: scale(0);
     height: 4px;
     display: block;
@@ -103,7 +104,7 @@
   &::after {
     content: '';
     position: absolute;
-    bottom: -4px;
+    top: 36px;
     left: 0;
     width: 100%;
     height: 4px;
@@ -139,4 +140,17 @@
     align-items: center;
     display: flex;
   }
+}
+.current {
+  color: #2196f3;  
+}
+.current::after {
+  content: '';
+  top: 36px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+  transform: scale(0);
 }
