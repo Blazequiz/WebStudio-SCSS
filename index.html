@@ -551,9 +551,11 @@
         </div>        
         <button type="submit" class="submit-btn">Відправити</button>
       </form>
-      <!-- burger menu -->
-      <div class="menu-container">
-        <button class="MenuCloseBtn">
+      </div>
+    </div>
+            <!-- burger menu -->
+      <div class="menu-container js-menu-container">
+        <button class="MenuCloseBtn js-close-menu">
           <svg width="20" height="20" class="svg-item">
             <use
               href="./img/symbol-defs.svg#close-burger-btn-svg"
@@ -561,27 +563,41 @@
             ></use>
           </svg>
         </button>
-        <ul class="mobile-menu js-menu-container" id="mobile-menu">
-          <li class="mobile-menu-element js-close-menu">
-            <a href="./index.html" class="mobile-link">Студія</a>
-          </li>
-          <li class="mobile-menu-element">
-            <a href="./portfolio.html" class="mobile-link">Портфоліо</a>
-          </li>
-          <li class="mobile-menu-element">
-            <a href="#" class="mobile-link">Контакти</a>
-          </li>
-        </ul>        
-        <!-- second list with contacts -->
-        <ul class="header-contact">
-          <li class="header-contact-contacts">
-            <a class="header-email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <!--  -->
-          <li class="">
-            <a class="" href="">+38 096 111 11 11</a>
-          </li>
-        </ul>
+        <div class="burger-menu-wrapper">
+          <div>
+            <ul class="mobile-menu" id="mobile-menu">
+              <li class="mobile-menu-element">
+                <a href="./index.html" class="mobile-link">Студія</a>
+              </li>
+              <li class="mobile-menu-element">
+                <a href="./portfolio.html" class="mobile-link">Портфоліо</a>
+              </li>
+              <li class="mobile-menu-element">
+                <a href="#" class="mobile-link">Контакти</a>
+              </li>
+            </ul> 
+          </div>
+          <!-- second list with contacts -->
+          <div>
+            <ul class="mobile-menu-contacts-part-list">
+              <li class="mobile-menu-contacts-part-list-element">
+                <a class="menu-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              </li>
+              <li class="mobile-menu-contacts-part-list-element">
+                <a class="menu-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+          <!-- third list with messangers -->
+          <div>
+            <ul class="messangers-list">
+              <li class="messangers-list-item"><a href="messangers-list-link">Instagram</a></li>
+              <li class="messangers-list-item"><a href="messangers-list-link">Twitter</a></li>
+              <li class="messangers-list-item"><a href="messangers-list-link">Facebook</a></li>
+              <li class="messangers-list-item"><a href="messangers-list-link">LinkedIn</a></li>
+             </ul>
+          </div>
+        </div>
       </div>
     <script src="./JS/modal.js"></script>
     <script src="./JS/burger-menu.js"></script>
