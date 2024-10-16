@@ -54,7 +54,7 @@
   flex-direction: column;
   gap: 32px;
   margin-bottom: 302px;
-  &-element {
+  &-link {
     font-family: $font-family;
     font-weight: 500;
     font-size: 40px;
@@ -71,15 +71,15 @@
   flex-direction: column-reverse;
   gap: 32px;
   margin-bottom: 64px;
-  &-element {
-    font-family: $font-family;
-    font-weight: 500;
-    font-size: 30px;
-    letter-spacing: 0.02em;
-    color: #000;   
-  }
   &-link {
-    color: #000;   
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    color: #757575;
+    &:hover {
+      color: $focus-color;
+    }
   }
 }
 // third list 
@@ -87,12 +87,6 @@
   display: flex;
   gap: 10px;
   &-item {
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 122%;
-    letter-spacing: 0.02em;
-    color: #2196f3;
     &:nth-child(n+2)::before {
       content: "";
       margin-right: 10px;
@@ -103,6 +97,12 @@
     }    
   }
   &-link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 122%;
+    letter-spacing: 0.02em;
+    color: #2196f3;
     color: #2196f3;
   }
 }

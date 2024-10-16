@@ -1013,14 +1013,14 @@ footer-second-link {
   gap: 32px;
   margin-bottom: 302px;
 }
-.mobile-menu-element {
+.mobile-menu-link {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 40px;
   letter-spacing: 0.02em;
   color: #212121;
 }
-.mobile-menu-element:hover {
+.mobile-menu-link:hover {
   color: #2196f3;
 }
 
@@ -1030,28 +1030,20 @@ footer-second-link {
   gap: 32px;
   margin-bottom: 64px;
 }
-.mobile-menu-contacts-part-list-element {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 30px;
-  letter-spacing: 0.02em;
-  color: #000;
-}
 .mobile-menu-contacts-part-list-link {
-  color: #000;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.mobile-menu-contacts-part-list-link:hover {
+  color: #2196f3;
 }
 
 .messangers-list {
   display: flex;
   gap: 10px;
-}
-.messangers-list-item {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 122%;
-  letter-spacing: 0.02em;
-  color: #2196f3;
 }
 .messangers-list-item:nth-child(n+2)::before {
   content: "";
@@ -1062,6 +1054,12 @@ footer-second-link {
   height: 0px;
 }
 .messangers-list-link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 122%;
+  letter-spacing: 0.02em;
+  color: #2196f3;
   color: #2196f3;
 }
 

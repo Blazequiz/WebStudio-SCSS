@@ -22,24 +22,31 @@
     <!-- header -->
     <header class="header">
       <div class="container flex">
-        <nav class="header-nav flex">
+        <nav class="header-nav">
           <a href="./index.html" lang="en" class="header-logotip"
             ><span class="header-logotip-logo">Web</span>Studio</a
           >
           <ul class="header-list flex">
-            <li class="header-item">
-              <a href="./index.html" class="header-link">Студія</a>
+            <li class="header-item">  
+              <a href="./index.html" class="header-link current">Студія</a>
             </li>
             <li class="header-item">
-              <a href="./portfolio.html" class="header-link current">Портфоліо</a>
+              <a href="./portfolio.html" class="header-link">Портфоліо</a>
             </li>
             <li class="header-item">
               <a href="#" class="header-link">Контакти</a>
             </li>
           </ul>
-          <button class="header-btn">btn</button>
+          <button class="header-menu-btn js-open-menu" aria-controls="mobile-menu" aria-expanded="false">
+            <svg width="20" height="20" class="svg-item">
+              <use
+                href="./img/symbol-defs.svg#burger-menu-svg"
+                class="burger-open-svg"
+              ></use>
+            </svg>
+          </button>
         </nav>
-        <ul class="header-contact flex" >
+        <ul class="header-contact">
           <li class="header-contact-contacts">
             <svg width="16" height="12">
               <use
@@ -353,6 +360,53 @@
         </div>
       </div>
     </footer>
+    <!-- burger menu -->
+    <div class="menu-container js-menu-container">
+      <button class="MenuCloseBtn js-close-menu">
+        <svg width="20" height="20" class="svg-item">
+          <use
+            href="./img/symbol-defs.svg#close-burger-btn-svg"
+            class="burger-close-svg"
+          ></use>
+        </svg>
+      </button>
+      <div class="burger-menu-wrapper">
+        <div>
+          <ul class="mobile-menu" id="mobile-menu">
+            <li class="mobile-menu-element">
+              <a href="./index.html" class="mobile-menu-link">Студія</a>
+            </li>
+            <li class="mobile-menu-element">
+              <a href="./portfolio.html" class="mobile-menu-link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu-element">
+              <a href="#" class="mobile-menu-link">Контакти</a>
+            </li>
+          </ul> 
+        </div>
+        <!-- second list with contacts -->
+        <div>
+          <ul class="mobile-menu-contacts-part-list">
+            <li class="mobile-menu-contacts-part-list-element">
+              <a class="mobile-menu-contacts-part-list-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="mobile-menu-contacts-part-list-element">
+              <a class="mobile-menu-contacts-part-list-link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+        <!-- third list with messangers -->
+        <div>
+          <ul class="messangers-list">
+            <li class="messangers-list-item"><a href="#" class="messangers-list-link">Instagram</a></li>
+            <li class="messangers-list-item"><a href="#" class="messangers-list-link">Twitter</a></li>
+            <li class="messangers-list-item"><a href="#" class="messangers-list-link">Facebook</a></li>
+            <li class="messangers-list-item"><a href="#" class="messangers-list-link">LinkedIn</a></li>
+           </ul>
+        </div>
+      </div>
+    </div>
     <script src="./JS/modal.js"></script>
+    <script src="./JS/burger-menu.js"></script>
   </body>
 </html>
