@@ -3,6 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  width: 100vw;
   background-image: 
     linear-gradient(
       rgba(47, 48, 58, 0.4) 0%, 
@@ -19,14 +20,15 @@
     ), 
     url(../img/header-tablet-bg.jpg);    
   }  
-  // @media screen and (min-width:1200px) {
-  //   background-image: 
-  //   linear-gradient(
-  //     rgba(47, 48, 58, 0.4) 0%, 
-  //     rgba(130, 132, 160, 0.4) 100%
-  //   ), 
-  //   url(../img/hero-background-mobile.jpg);        
-  // }
+  @media screen and (min-width:1200px) {
+    @include paddings(200px , 200px);
+    background-image: 
+    linear-gradient(
+      rgba(47, 48, 58, 0.4) 0%, 
+      rgba(130, 132, 160, 0.4) 100%
+    ), 
+    url(../img/background.jpg);        
+  }
   &-button {
       padding: 10px 32px;
       border: 0;

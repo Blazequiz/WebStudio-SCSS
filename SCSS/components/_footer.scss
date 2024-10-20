@@ -1,6 +1,7 @@
 footer{
   @include paddings(60px , 60px);
   background-color: $background-color;
+  width: 100vw;
 
   &-second-link {  
     text-align: center;
