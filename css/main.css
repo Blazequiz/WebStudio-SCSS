@@ -87,7 +87,6 @@ footer a {
   align-items: center;
   padding: 0 15px;
   margin: 0 auto;
-  width: 320px;
   min-width: 320px;
 }
 @media screen and (min-width: 480px) {
@@ -304,9 +303,19 @@ footer a {
   background-size: cover;
   background-position: center;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-title {
+    background-image: url("../img/hero-bg@2x.jpg");
+  }
+}
 @media screen and (min-width: 768px) {
   .section-title {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%, rgba(130, 132, 160, 0.4) 100%), url(../img/header-tablet-bg.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section-title {
+    background-image: url("../../img/hero-bg-tablet@2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -314,6 +323,11 @@ footer a {
     padding-bottom: 200px;
     padding-top: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4) 0%, rgba(130, 132, 160, 0.4) 100%), url(../img/background.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section-title {
+    background-image: url("../../img/hero-bg-desktop@2x.jpg");
   }
 }
 .section-title-button {
@@ -1015,13 +1029,14 @@ footer-second-link {
   padding-right: 144px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between; /* Розподіл елементів */
+  height: 100vh; /* Адаптивна висота для повного заповнення */
 }
 
 .mobile-menu {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-bottom: 302px;
 }
 .mobile-menu-link {
   font-family: "Roboto", sans-serif;
