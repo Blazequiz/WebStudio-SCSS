@@ -17,7 +17,11 @@
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url("../img/hero-bg@2x.jpg");
+    background-image:linear-gradient(
+      rgba(47, 48, 58, 0.4) 0%, 
+      rgba(130, 132, 160, 0.4) 100%
+    ),  
+    url("../img/hero-bg@2x.jpg");
 }
   // tablet images Ret.
   @media screen and (min-width:768px) {
@@ -29,7 +33,11 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url("../../img/hero-bg-tablet@2x.jpg");
+      background-image:linear-gradient(
+        rgba(47, 48, 58, 0.4) 0%, 
+        rgba(130, 132, 160, 0.4) 100%
+      ),  
+      url("../img/hero-bg-tablet@2x.jpg");
     }
   }  
   // desktop images Ret.
@@ -44,7 +52,12 @@
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url("../../img/hero-bg-desktop@2x.jpg");
+      background-image:
+      linear-gradient(
+        rgba(47, 48, 58, 0.4) 0%, 
+        rgba(130, 132, 160, 0.4) 100%
+      ),  
+      url("../../img/hero-bg-desktop@2x.jpg");
     }    
   }
   &-button {
