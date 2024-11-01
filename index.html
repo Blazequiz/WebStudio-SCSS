@@ -122,6 +122,7 @@
           <ul class="our-classes-list">
             <li class="our-classes-list-item">
               <img
+                srcset="./img/imgbox1.jpg 1x, ./img/img-box@2x.jpg 2x"
                 src="./img/imgbox1.jpg"
                 alt="кодимо"
                 height="294"
@@ -131,6 +132,7 @@
             </li>
             <li class="our-classes-list-item">
               <img
+                srcset="./img/imgbox2.jpg 1x, ./img/img-second-box@2x.jpg 2x"
                 src="./img/imgbox2.jpg"
                 alt="дизайн"
                 height="294"
@@ -140,6 +142,7 @@
             </li>
             <li class="our-classes-list-item">
               <img
+                srcset="./img/imgbox3.jpg 1x, ./img/img-third-box@2x.jpg 2x"
                 src="./img/imgbox3.jpg"
                 alt="планування"
                 height="294"
@@ -155,15 +158,15 @@
         <div class="container">
           <h2 class="team-section-title">Наша команда</h2>
           <ul class="team-section-list">
+            <!-- first item -->
             <li class="team-section-list-item">
               <div class="team-section-list-item-first-person">
-                <img
-                  class="team-section-images"
-                  src="./img/IgorJPG.jpg"
-                  alt="Фото Ігоря"
-                  height="260"
-                  width="270"
-                />
+                <picture>
+                  <source srcset="./img/our-teams-first-desktop-img@1x.jpg 1x, ./img/our-teams-first-desktop-img@2x.jpg 2x" media="(min-width:1200px)">
+                  <source srcset="./img/our-teams-first-tablet-img@1x.jpg 1x, ./img/our-teams-first-tablet-img@1x.jpg 2x" media="(min-width:768px)">
+                  <source srcset="./img/our-teams-first-mobile-img@1x.jpg 1x, ./img/our-teams-first-mobile-img@2x.jpg 2x" media="(max-width:767px)">
+                  <img src="./img/IgorJPG.jpg" alt="IgorJPG">
+                </picture>
                 <h4 class="team-section-title-h4">Ігор Дем'яненко</h4>
                 <p lang="en" class="team-section-paragraph">Product Designer</p>
                 <ul class="icons-list">
@@ -205,13 +208,12 @@
             <!--  -->
             <li class="team-section-list-item">
               <div class="team-section-list-item-second-person">
-                <img
-                  class="team-section-images"
-                  src="./img/OlgaJPG.jpg"
-                  alt="Фото Ольги"
-                  height="260"
-                  width="270"
-                />
+                <picture>
+                  <source srcset="./img/our-teams-second-desktop-img@1x.jpg 1x, ./img/our-teams-second-desktop-img@2x.jpg 2x" media="(min-width:1200px)">
+                  <source srcset="./img/our-teams-second-tablet-img@1x.jpg 1x, ./img/our-teams-second-tablet-img@1x.jpg 2x" media="(min-width:768px)">
+                  <source srcset="./img/our-teams-second-mobile-img@1x.jpg 1x, ./img/our-teams-second-mobile-img@2x.jpg 2x" media="(max-width:767px)">
+                  <img src="./img/OlgaJPG.jpg" alt="OlgaJPG">
+                </picture>
                 <h4 class="team-section-title-h4">Ольга Рєпіна</h4>
                 <p lang="en" class="team-section-paragraph">
                   Frontend Developer
@@ -255,13 +257,12 @@
             <!--  -->
             <li class="team-section-list-item">
               <div class="team-section-list-item-third-person">
-                <img
-                  class="team-section-images"
-                  src="./img/MykolaJPG.jpg"
-                  alt="Фото Миколи"
-                  height="260"
-                  width="270"
-                />
+                <picture>
+                  <source srcset="./img/our-teams-third-desktop-img@1x.jpg 1x, ./img/our-teams-third-desktop-img@2x.jpg 2x" media="(min-width:1200px)">
+                  <source srcset="./img/our-teams-third-tablet-img@1x.jpg 1x, ./img/our-teams-third-tablet-img@1x.jpg 2x" media="(min-width:768px)">
+                  <source srcset="./img/our-teams-third-mobile-img@1x.jpg 1x, ./img/our-teams-third-mobile-img@2x.jpg 2x" media="(max-width:767px)">
+                  <img src="./img/MykolaJPG.jpg" alt="MykolaJPG">
+                </picture>
                 <h4 class="team-section-title-h4">Микола Тарасов</h4>
                 <p lang="en" class="team-section-paragraph">Marketing</p>
                 <ul class="icons-list">
@@ -303,13 +304,12 @@
             <!--  -->
             <li class="team-section-list-item">
               <div class="team-section-list-item-fourth-person">
-                <img
-                  class="team-section-images"
-                  src="./img/MykhailoJPG.jpg"
-                  alt="Фото Михайла"
-                  height="260"
-                  width="270"
-                />
+                <picture>
+                  <source srcset="./img/our-teams-fourth-desktop-img@1x.jpg 1x, ./img/our-teams-fourth-desktop-img@2x.jpg 2x" media="(min-width:1200px)">
+                  <source srcset="./img/our-teams-fourth-tablet-img@1x.jpg 1x, ./img/our-teams-fourth-tablet-img@1x.jpg 2x" media="(min-width:768px)">
+                  <source srcset="./img/our-teams-fourth-mobile-img@1x.jpg 1x, ./img/our-teams-fourth-mobile-img@2x.jpg 2x" media="(max-width:767px)">
+                  <img src="./img/MykhailoJPG.jpg" alt="MykhailoJPG">
+                </picture>
                 <h4 class="team-section-title-h4">Михайло Єрмаков</h4>
                 <p lang="en" class="team-section-paragraph">UI Designer</p>
                 <ul class="icons-list">
