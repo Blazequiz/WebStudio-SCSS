@@ -82,6 +82,10 @@ footer a {
   color: rgba(179, 179, 179, 0.6);
 }
 
+.help-width {
+  width: 100%;
+}
+
 .container {
   justify-content: space-between;
   align-items: center;
